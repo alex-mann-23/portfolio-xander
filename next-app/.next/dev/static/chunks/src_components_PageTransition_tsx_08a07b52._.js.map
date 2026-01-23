@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/alexandermann/Documents/Personal/portfolio%3Axander/next-app/src/components/PageTransition.tsx"],"sourcesContent":["\"use client\";\n\nimport * as React from \"react\";\nimport { motion } from \"framer-motion\";\nimport { cn } from \"@/lib/utils\";\n\ntype PageTransitionProps = {\n  className?: string;\n  children: React.ReactNode;\n};\n\nexport function PageTransition({ className, children }: PageTransitionProps) {\n  return (\n    <motion.div\n      className={cn(\"space-y-16\", className)}\n      initial={{ opacity: 0, y: 24 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.6, ease: \"easeOut\" }}\n    >\n      {children}\n    </motion.div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAGA;AACA;AAJA;;;;AAWO,SAAS,eAAe,EAAE,SAAS,EAAE,QAAQ,EAAuB;IACzE,qBACE,6LAAC,uMAAM,CAAC,GAAG;QACT,WAAW,IAAA,4HAAE,EAAC,cAAc;QAC5B,SAAS;YAAE,SAAS;YAAG,GAAG;QAAG;QAC7B,SAAS;YAAE,SAAS;YAAG,GAAG;QAAE;QAC5B,YAAY;YAAE,UAAU;YAAK,MAAM;QAAU;kBAE5C;;;;;;AAGP;KAXgB"}}]
+}
