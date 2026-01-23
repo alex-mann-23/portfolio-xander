@@ -2947,3 +2947,146 @@ blockquote {
   font-style: normal;
   font-display: auto;
 }
+
+/* Dark mode overrides */
+body {
+  background-color: #0b0b12;
+  color: #e6e6ef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f4f4ff;
+}
+
+p, li, blockquote, .paragraph-large, .title-grey, .job-title {
+  color: #c7c7d7;
+}
+
+a {
+  color: #7dd3fc;
+}
+
+.navbar {
+  background-color: #0b0b12;
+}
+
+.nav-link,
+.nav-link.w--current {
+  color: #e6e6ef;
+}
+
+.nav-link:hover {
+  color: #7dd3fc;
+}
+
+.social-icon {
+  filter: brightness(0) invert(1);
+}
+
+.header,
+.content-section,
+.footer,
+.header-contact {
+  background-color: #0b0b12;
+}
+
+.service-card,
+.project-block,
+.form-card,
+.footer-card,
+.blog-card,
+.author-wrap,
+.footer-mail-wrap {
+  background-color: #141421;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.button,
+.button-red,
+.button-hero,
+.button-submit {
+  background-color: #665aff;
+  color: #f4f4ff;
+}
+
+.button-red:hover,
+.button:hover {
+  color: #ffffff;
+}
+
+.button-outline {
+  color: #f4f4ff;
+  border-color: #5b5b7a;
+}
+
+.text-field,
+.text-field-long,
+.text-field-large {
+  background-color: #12121d;
+  color: #e6e6ef;
+  border-color: #2a2a3a;
+}
+
+.text-field::placeholder,
+.text-field-long::placeholder,
+.text-field-large::placeholder {
+  color: #7a7a91;
+}
+
+.bg-block-blue,
+.bg-block-red,
+.work-bg-block {
+  background-color: #151526;
+}
+
+.scroll-top,
+.scroll-circle {
+  background-color: #141421;
+}
+
+.text-block,
+.text-span-3,
+.text-span-6,
+.project-name {
+  color: #a9a3ff;
+}
+
+/* Hero headline animation */
+.display-h1 {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.display-h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: hero-reveal 0.8s ease forwards;
+}
+
+.display-h1 .text-span-4 {
+  animation-delay: 0.1s;
+}
+
+.display-h1 .text-span-5 {
+  animation-delay: 0.35s;
+}
+
+.display-h1 .text-span-12 {
+  animation-delay: 0.6s;
+}
+
+.display-h1 .text-span-3 {
+  animation-delay: 0.8s;
+}
+
+@keyframes hero-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
