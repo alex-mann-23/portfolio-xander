@@ -1,15 +1,12 @@
-[00:00:00.997] Server  LOG     
-[00:00:00.997] Server  LOG       We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
-[00:00:00.997] Server  LOG       The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
-
-[00:00:00.997] Server  LOG       	- include was updated to add '.next/types/**/*.ts'
-[00:00:00.997] Server  LOG       	- include was updated to add '.next/dev/types/**/*.ts'
-[00:00:00.997] Server  LOG       	- plugins was updated to add { name: 'next' }
-[00:00:00.997] Server  LOG     
-[00:00:00.997] Server  LOG       The following mandatory changes were made to your tsconfig.json:
-
-[00:00:00.997] Server  LOG       	- jsx was set to react-jsx (next.js uses the React automatic runtime)
-[00:00:00.997] Server  LOG     
-[00:00:01.366] Server  LOG     ✓ Ready in 1038ms
-[00:00:20.588] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:11.182] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.301] Server  LOG     ✓ Ready in 879ms
+[00:00:03.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:32.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:36.183] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:46.803] Server  LOG     ✓ Compiled in 371ms
+[00:12:46.809] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/normalized-asset-prefix.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:31.755] Server  LOG     ✓ Compiled in 370ms
+[00:02:31.760] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/shared/lib/normalized-asset-prefix.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:02:33.008] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:48.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:21.468] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
