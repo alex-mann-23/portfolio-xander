@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTheme } from "next-themes";
@@ -28,58 +29,24 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center" aria-label={site.name}>
           <span className="sr-only">{site.name}</span>
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 368 368"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <Image
+            src="/logo-light.png"
+            width={36}
+            height={36}
+            alt=""
             className="block h-9 w-9 dark:hidden"
             aria-hidden="true"
-          >
-            <g clipPath="url(#clip0_logo_light)">
-              <rect width="368" height="368" fill="white" />
-              <rect x="45.8918" y="91.8379" width="321.622" height="229.73" fill="#F9BF81" />
-              <rect width="46" height="92" transform="matrix(-1 0 0 1 46 138)" fill="#F9BF81" />
-              <path
-                d="M45.8916 91.8379V137.784H-0.0537109L-0.0537109 91.8379H45.8916ZM368 53H367.514V91.8379L45.8916 91.8379L45.8916 45.8926L184 45.8926V0L368 0V53Z"
-                fill="#120900"
-              />
-              <path
-                d="M91.8379 275.623H137.784V321.568H183.73V275.623H229.676V321.568H321.568V275.623H367.514V321.568H367.515V367.514H91.8379L91.8379 321.568H45.8916L45.8916 137.784H91.8379V275.623ZM321.568 275.622H229.676V229.677H321.568V275.622ZM229.676 183.73H183.73V137.784H229.676V183.73ZM321.568 183.73H275.622V137.784L321.568 137.784V183.73Z"
-                fill="#120900"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_logo_light">
-                <rect width="368" height="368" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 368 368"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            priority
+          />
+          <Image
+            src="/logo-dark-v2.png"
+            width={36}
+            height={36}
+            alt=""
             className="hidden h-9 w-9 dark:block"
             aria-hidden="true"
-          >
-            <g clipPath="url(#clip0_logo_dark)">
-              <rect width="46" height="92" transform="matrix(-1 0 0 1 46 138)" fill="#F9BF81" />
-              <path d="M0 0L184 0V46L46 46L46 92H0L0 0Z" fill="white" />
-              <path d="M46 322H92L92 368H0L0 230H46L46 322Z" fill="white" />
-              <path
-                d="M368 276H322V322H230V276H184V322H138V276H92V138H46V92L368 92V276ZM229.676 229.677V275.622H321.568V229.677L229.676 229.677ZM183.73 137.784V183.73H229.676V137.784H183.73ZM275.622 137.784V183.73H321.568V137.784H275.622Z"
-                fill="#F9BF81"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_logo_dark">
-                <rect width="368" height="368" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
