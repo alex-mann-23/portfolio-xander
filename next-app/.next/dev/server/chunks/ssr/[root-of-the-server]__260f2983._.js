@@ -121,103 +121,117 @@ __turbopack_context__.s([
 ]);
 const projects = [
     {
-        slug: "summit-finance",
-        title: "Summit Finance",
-        summary: "A calm dashboard experience for long-term investing.",
+        slug: "unlock",
+        title: "Unlock",
+        summary: "Security-first access for modern identity teams.",
         tags: [
             "Product",
-            "Dashboard",
-            "Fintech"
+            "Security",
+            "Platform"
         ],
         year: "2024",
         role: "Product Design / UX Strategy",
         featured: true,
-        links: {
-            live: "https://example.com",
-            repo: "https://github.com"
-        },
+        image: "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/601038b1c79e167af7d6bb4f_Preview-Unlock.png",
         body: [
-            "Summit Finance needed a dashboard that felt trustworthy and clear for non-technical investors.",
-            "I mapped the information hierarchy, simplified reporting, and introduced a lightweight visual system for fast scanning.",
-            "The result was a 28% increase in weekly active users and a measurable drop in support requests."
+            "Unlock needed a clear narrative for enterprise identity teams.",
+            "I focused on security-first messaging, tightened the information architecture, and introduced a clean visual system.",
+            "The new experience improved demo requests and reduced sales friction."
         ]
     },
     {
-        slug: "northstar-mobile",
-        title: "Northstar Mobile",
-        summary: "Onboarding and habit loops for a mental wellness app.",
-        tags: [
-            "Mobile",
-            "Wellness",
-            "UX"
-        ],
-        year: "2023",
-        role: "Product Design / Research",
-        featured: true,
-        links: {
-            live: "https://example.com"
-        },
-        body: [
-            "Northstar needed a gentle onboarding flow that balanced education with quick wins.",
-            "I crafted a two-minute setup journey and a modular habit tracker to reduce cognitive load.",
-            "Retention improved by 19% in the first 30 days after launch."
-        ]
-    },
-    {
-        slug: "atlas-landing",
-        title: "Atlas Landing",
-        summary: "A conversion-focused marketing site for a logistics startup.",
+        slug: "gp-website",
+        title: "GP Website",
+        summary: "Modern marketing site for a consulting practice.",
         tags: [
             "Web",
             "Brand",
-            "Growth"
+            "Marketing"
+        ],
+        year: "2023",
+        role: "Web Design / Content Strategy",
+        featured: true,
+        image: "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/5f91d729a5eae20d80de2f93_Preview-Petersen.png",
+        body: [
+            "GP wanted a modern site that highlighted its consulting practice.",
+            "I mapped the content to client outcomes, refreshed typography, and built modular sections.",
+            "The launch improved inbound inquiries and recruiter engagement."
+        ]
+    },
+    {
+        slug: "unit-1",
+        title: "UNIT 1",
+        summary: "Brand system and product storytelling for a new venture.",
+        tags: [
+            "Brand",
+            "Web",
+            "Design System"
+        ],
+        year: "2023",
+        role: "Brand Design / UI",
+        featured: true,
+        image: "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/5ff086f79c74e66cb269e71b_Preview-Unit1.png",
+        body: [
+            "UNIT 1 required a cohesive story across product and brand touchpoints.",
+            "I built a simple design language and a flexible layout system for case studies.",
+            "The work clarified the value proposition and improved time-on-site."
+        ]
+    },
+    {
+        slug: "rga-dvs",
+        title: "R/GA DVS",
+        summary: "Venture studio portfolio with bold storytelling.",
+        tags: [
+            "Web",
+            "Agency",
+            "Portfolio"
         ],
         year: "2022",
-        role: "UI Design / Content Strategy",
+        role: "Experience Design",
         featured: true,
-        links: {
-            live: "https://example.com"
-        },
+        image: "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/5f9c5bf1e706d9e63c5a778c_Preview-RGA.png",
         body: [
-            "Atlas needed a new web presence that quickly explained a complex product.",
-            "I built a clear narrative with modular sections, lightweight motion, and strong type hierarchy.",
-            "The redesign doubled demo requests within the first six weeks."
+            "R/GA DVS needed a portfolio that elevated new ventures.",
+            "I created a grid-based system with confident storytelling and lightweight motion.",
+            "The update made new initiatives easier to discover."
         ]
     },
     {
-        slug: "halo-commerce",
-        title: "Halo Commerce",
-        summary: "A modular design system for a multi-brand commerce suite.",
+        slug: "coddle",
+        title: "Coddle",
+        summary: "Friendly onboarding for a modern care platform.",
         tags: [
-            "Design System",
-            "Web",
-            "Commerce"
+            "Product",
+            "Healthcare",
+            "UX"
         ],
         year: "2021",
-        role: "Design Systems / UI",
-        featured: false,
+        role: "Product Design",
+        featured: true,
+        image: "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/5f91ec7fe8e905101b69abe6_Preview-Coddle.png",
         body: [
-            "Halo Commerce needed consistency across four brand portals without losing individuality.",
-            "I designed a token-based system and a shared component library with documented patterns.",
-            "The system reduced design debt and shortened new feature delivery cycles."
+            "Coddle needed a welcoming onboarding experience for new caregivers.",
+            "I simplified the flows, added reassuring microcopy, and crafted a calm interface.",
+            "Activation rose as users completed setup more quickly."
         ]
     },
     {
-        slug: "studio-notes",
-        title: "Studio Notes",
-        summary: "A minimal writing tool for teams who document everything.",
+        slug: "produck",
+        title: "Produck",
+        summary: "Playful ecommerce concept for collectible products.",
         tags: [
-            "SaaS",
-            "Productivity",
-            "Web"
+            "Ecommerce",
+            "Brand",
+            "Retail"
         ],
         year: "2020",
-        role: "Product Design",
-        featured: false,
+        role: "Visual Design / UX",
+        featured: true,
+        image: "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/5f9c5bdcc6f5c04cfe6bea15_Preview-Produck.png",
         body: [
-            "Studio Notes required a writing interface that felt as calm as a paper notebook.",
-            "I introduced soft visual affordances, subtle borders, and a focused writing mode.",
-            "The product became the team's default documentation hub within a month."
+            "Produck needed a playful ecommerce concept that still felt premium.",
+            "I designed the product grid, bundle flows, and brand motifs for collectors.",
+            "The concept tested well with early users and repeat buyers."
         ]
     }
 ];
