@@ -1,6 +1,14 @@
-[00:00:02.977] Server  LOG     ✓ Ready in 2.1s
-[00:00:18.339] Server  LOG     ○ Compiling / ...
-[00:00:55.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:08.903] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:19.342] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:36.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.117] Server  WARN    ⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
+[00:00:04.464] Server  LOG     ✓ Ready in 3.7s
+[00:00:07.567] Server  LOG     ○ Compiling / ...
+[00:00:37.374] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:00.547] Server  LOG     ✓ Compiled in 151ms
+[00:21:04.826] Server  LOG     ✓ Compiled in 57ms
+[00:21:35.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:46.376] Server  LOG     ✓ Compiled in 35ms
+[00:23:53.143] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:07.138] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:04.842] Server  LOG     ✓ Compiled in 699ms
+[00:26:07.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:19.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:41.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

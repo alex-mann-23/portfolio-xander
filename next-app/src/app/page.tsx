@@ -13,21 +13,16 @@ export default function HomePage() {
   return (
     <PageTransition>
       <section className="space-y-6">
-        <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          {site.tagline}
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          {site.name} - {site.role}
+        <h1 className="text-4xl font-medium tracking-tight sm:text-5xl">
+          Everything starts with an <span className="font-bold">idea</span>.
         </h1>
         <p className="max-w-2xl text-lg text-muted-foreground">
-          {site.hero.subheading}
+          Hi! 👋🏼 I’m Alexander Mann, a Senior Product Designer with more than 15 years of
+          experience based in London 🇬🇧
         </p>
         <div className="flex flex-wrap gap-3">
-          <Button asChild>
-            <a href="#featured">View featured work</a>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href={site.cta.href}>{site.cta.actionLabel}</a>
+          <Button className="border border-primary" asChild>
+            <a href={site.cta.href}>Get in touch!</a>
           </Button>
         </div>
       </section>

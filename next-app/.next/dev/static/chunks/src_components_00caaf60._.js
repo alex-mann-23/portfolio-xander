@@ -360,7 +360,12 @@ const itemVariants = {
         y: 0,
         transition: {
             duration: 0.45,
-            ease: "easeOut"
+            ease: [
+                0.16,
+                1,
+                0.3,
+                1
+            ]
         }
     }
 };
@@ -376,17 +381,17 @@ function ProjectsGrid({ projects, className }) {
                     project: project
                 }, void 0, false, {
                     fileName: "[project]/src/components/ProjectsGrid.tsx",
-                    lineNumber: 38,
+                    lineNumber: 42,
                     columnNumber: 11
                 }, this)
             }, project.slug, false, {
                 fileName: "[project]/src/components/ProjectsGrid.tsx",
-                lineNumber: 37,
+                lineNumber: 41,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/ProjectsGrid.tsx",
-        lineNumber: 30,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
