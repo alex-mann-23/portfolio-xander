@@ -49,32 +49,33 @@ export default function HomePage() {
           <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
             About
           </p>
-          <h2 className="text-2xl font-semibold">{site.about.title}</h2>
+          <h2 className="text-2xl font-semibold">A short story behind my work</h2>
           <div className="space-y-3 text-muted-foreground">
-            {site.about.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <p>
+              I am a product designer who enjoys what design has to bring to the world. I
+              simply love making useful things that also look great 🔥
+            </p>
+            <p>
+              By the age of 12, I learnt basic HTML at school. This was the first time that I
+              could be in control of the design of something, and I immediately loved it! 🫶🏻
+            </p>
+            <p>
+              A new hobby was born: every day after school, I went back home and started a new
+              web on whatever subject I had in mind. Opening a bloc of notes and starting to
+              code was an adventure for me. 🤓
+            </p>
+            <p>
+              Years later, I realised I enjoyed designing more than coding, and the rest is
+              history 😉
+            </p>
+            <p>
+              Now, after years of having worked in different industries as a designer
+              (marketing, branding, digital advertising, UX/UI, product), I'm closing the
+              circle, diving back into code and using Cursor to build the website you are
+              looking at right now 😊
+            </p>
           </div>
         </div>
-        <Card className="border-border/60 bg-card/60">
-          <CardHeader>
-            <CardTitle>Details</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-sm text-muted-foreground">
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Focus</p>
-              <p className="text-base text-foreground">Product systems + UX</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Location</p>
-              <p className="text-base text-foreground">{site.location}</p>
-            </div>
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Collab</p>
-              <p className="text-base text-foreground">Remote, async friendly</p>
-            </div>
-          </CardContent>
-        </Card>
       </section>
 
       <section id="cta" className="rounded-3xl border border-border/60 bg-card/60 p-8 shadow-sm">
