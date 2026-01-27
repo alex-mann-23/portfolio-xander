@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
@@ -20,6 +21,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
     >
       <Card className="h-full border-border/60 bg-card/70 shadow-sm backdrop-blur">
         <CardHeader className="space-y-3">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-border/40 bg-muted/20">
+            <Image
+              src={project.image}
+              alt={project.imageAlt ?? ""}
+              fill
+              sizes="(min-width: 1280px) 340px, (min-width: 768px) 45vw, 90vw"
+              className="object-cover"
+            />
+          </div>
           <div className="flex flex-wrap gap-2">
             {project.tags.slice(0, 3).map((tag) => (
               <Badge key={tag} variant="outline">

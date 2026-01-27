@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
             <div className="absolute left-1/2 top-[-10%] h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(99,102,241,0.2),transparent_60%)] blur-3xl" />
             <div className="absolute right-[10%] top-[20%] h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,rgba(56,189,248,0.2),transparent_60%)] blur-3xl" />
