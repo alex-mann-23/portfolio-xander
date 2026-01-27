@@ -44,9 +44,6 @@ export default function RootLayout({
               <p>Alexander Mann — Digital Portfolio 2026</p>
               </div>
               <div className="flex flex-wrap items-center gap-3">
-                <Button variant="outline" size="sm" asChild>
-                  <a href={`mailto:${site.links.email}`}>{site.links.email}</a>
-                </Button>
                 {site.links.socials.map((social) => (
                   <Link
                     key={social.label}
