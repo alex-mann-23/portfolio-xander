@@ -23,11 +23,19 @@ export function ScrollToFeaturedButton() {
       onClick={handleClick}
       className="group inline-flex items-center gap-3 text-sm font-medium text-foreground/80 transition hover:text-foreground"
     >
-      <span className="relative flex h-9 w-6 items-start justify-center rounded-full border border-foreground/50">
+      <span className="relative flex h-9 w-6 items-start justify-center overflow-hidden rounded-full border border-foreground/50">
+        <span className="absolute left-1/2 top-2 h-2 w-0.5 -translate-x-1/2 rounded-full bg-foreground/70" />
         <motion.span
-          className="mt-2 h-1.5 w-1.5 rounded-full bg-foreground"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.3, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute left-1/2 top-2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-foreground"
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ y: [0, 0, 14], opacity: [0, 1, 0] }}
+          transition={{
+            duration: 1.8,
+            repeat: Infinity,
+            ease: "easeInOut",
+            times: [0, 0.2, 1],
+            repeatDelay: 0.1,
+          }}
         />
       </span>
       <span>Scroll down to see my work</span>

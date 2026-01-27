@@ -41,8 +41,7 @@ export default function RootLayout({
           <footer className="border-t border-border/60">
             <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-10 text-sm text-muted-foreground sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
               <div className="space-y-2">
-                <p className="text-base font-semibold text-foreground">{site.name}</p>
-                <p>{site.tagline}</p>
+              <p>Alexander Mann — Digital Portfolio 2026</p>
               </div>
               <div className="flex flex-wrap items-center gap-3">
                 <Button variant="outline" size="sm" asChild>

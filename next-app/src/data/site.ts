@@ -19,19 +19,15 @@ export const site = {
   cta: {
     heading: "Ready to build something intentional?",
     subheading: "Let's talk about your product, timeline, and goals.",
-    actionLabel: "Start a project",
+    actionLabel: "Get in touch!",
     href: "mailto:hello@yourdomain.com",
   },
   nav: [
-    { label: "Home", href: "/" },
-    { label: "Projects", href: "/projects" },
-    { label: "About", href: "/#about" },
   ],
   links: {
-    email: "hello@yourdomain.com",
+    email: "hello@iamxander.io",
     socials: [
       { label: "LinkedIn", href: "https://linkedin.com" },
-      { label: "Dribbble", href: "https://dribbble.com" },
       { label: "GitHub", href: "https://github.com" },
     ],
   },

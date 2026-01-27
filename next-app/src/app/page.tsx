@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { PageTransition } from "@/components/PageTransition";
 import { ProjectsGrid } from "@/components/ProjectsGrid";
 import { ScrollToFeaturedButton } from "@/components/ScrollToFeaturedButton";
@@ -36,9 +35,6 @@ export default function HomePage() {
             </p>
             <h2 className="text-2xl font-semibold">{site.hero.heading}</h2>
           </div>
-          <Button variant="ghost" size="sm" asChild>
-            <Link href="/projects">View all</Link>
-          </Button>
         </div>
         <ProjectsGrid projects={featuredProjects} />
       </section>

@@ -491,6 +491,10 @@
     top: calc(var(--spacing) * 0);
   }
 
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+
   .top-\[-10\%\] {
     top: -10%;
   }
@@ -551,6 +555,10 @@
     height: calc(var(--spacing) * 1.5);
   }
 
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
@@ -591,8 +599,16 @@
     min-height: 100vh;
   }
 
+  .w-0\.5 {
+    width: calc(var(--spacing) * .5);
+  }
+
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
+  }
+
+  .w-2 {
+    width: calc(var(--spacing) * 2);
   }
 
   .w-6 {
