@@ -76,8 +76,9 @@
     --text-5xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --tracking-tight: -.025em;
-    --tracking-wide: .025em;
+    --radius-lg: .5rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --blur-3xl: 64px;
@@ -474,6 +475,10 @@
     position: fixed;
   }
 
+  .relative {
+    position: relative;
+  }
+
   .sticky {
     position: sticky;
   }
@@ -518,6 +523,10 @@
     margin-top: auto;
   }
 
+  .block {
+    display: block;
+  }
+
   .flex {
     display: flex;
   }
@@ -534,8 +543,8 @@
     display: inline-flex;
   }
 
-  .h-4 {
-    height: calc(var(--spacing) * 4);
+  .aspect-\[4\/3\] {
+    aspect-ratio: 4 / 3;
   }
 
   .h-9 {
@@ -552,6 +561,10 @@
 
   .h-16 {
     height: calc(var(--spacing) * 16);
+  }
+
+  .h-\[23px\] {
+    height: 23px;
   }
 
   .h-\[280px\] {
@@ -574,8 +587,12 @@
     min-height: 100vh;
   }
 
-  .w-4 {
-    width: calc(var(--spacing) * 4);
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
 
   .w-\[280px\] {
@@ -707,6 +724,10 @@
     border-radius: 3.40282e38px;
   }
 
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -736,6 +757,11 @@
 
   .bg-\[radial-gradient\(circle\,rgba\(99\,102\,241\,0\.2\)\,transparent_60\%\)\] {
     background-image: radial-gradient(circle, #6366f133, #0000 60%);
+  }
+
+  .object-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .p-6 {
@@ -818,6 +844,11 @@
     line-height: 1;
   }
 
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -841,11 +872,6 @@
   .tracking-tight {
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
-  }
-
-  .tracking-wide {
-    --tw-tracking: var(--tracking-wide);
-    letter-spacing: var(--tracking-wide);
   }
 
   .uppercase {
@@ -1062,6 +1088,18 @@
   @media (min-width: 80rem) {
     .xl\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:block {
+      display: block;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:hidden {
+      display: none;
     }
   }
 }
