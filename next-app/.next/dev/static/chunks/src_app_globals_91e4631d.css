@@ -78,6 +78,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-tight: -.025em;
+    --radius-lg: .5rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --blur-3xl: 64px;
@@ -474,6 +475,10 @@
     position: fixed;
   }
 
+  .relative {
+    position: relative;
+  }
+
   .sticky {
     position: sticky;
   }
@@ -536,6 +541,10 @@
 
   .inline-flex {
     display: inline-flex;
+  }
+
+  .aspect-\[4\/3\] {
+    aspect-ratio: 4 / 3;
   }
 
   .h-9 {
@@ -715,6 +724,10 @@
     border-radius: 3.40282e38px;
   }
 
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -744,6 +757,11 @@
 
   .bg-\[radial-gradient\(circle\,rgba\(99\,102\,241\,0\.2\)\,transparent_60\%\)\] {
     background-image: radial-gradient(circle, #6366f133, #0000 60%);
+  }
+
+  .object-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .p-6 {
