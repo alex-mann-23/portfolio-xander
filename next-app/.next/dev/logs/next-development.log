@@ -1,3 +1,13 @@
-[00:00:00.996] Server  LOG     ✓ Ready in 639ms
-[00:00:02.509] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:59.314] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.799] Server  LOG     ✓ Ready in 606ms
+[00:07:56.625] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open '/Users/alexandermann/portfolio-xander/portfolio-xander/next-app/.next/dev/server/app/page/build-manifest.json'
+[00:07:59.630] Server  LOG     ○ Compiling /_error ...
+[00:03:54.376] Server  LOG     ○ Compiling / ...
+[00:03:55.295] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:55.933] Browser WARN    Image with src "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/601038b1c79e167af7d6bb4f_Preview-Unlock.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:56.217] Browser WARN    Image with src "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/5f91d729a5eae20d80de2f93_Preview-Petersen.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:23.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:28.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:38.599] Server  LOG     ✓ Compiled in 367ms
+[00:06:56.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

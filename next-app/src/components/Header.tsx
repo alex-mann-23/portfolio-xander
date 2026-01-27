@@ -10,7 +10,7 @@ import { site } from "@/data/site";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -30,20 +30,11 @@ export function Header() {
         <Link href="/" className="flex items-center" aria-label={site.name}>
           <span className="sr-only">{site.name}</span>
           <Image
-            src="/logo-light.png"
+            src={mounted && resolvedTheme === "dark" ? "/logo-dark-v2.png" : "/logo-light.png"}
             width={36}
             height={36}
             alt=""
-            className="block h-9 w-9 dark:hidden"
-            aria-hidden="true"
-            priority
-          />
-          <Image
-            src="/logo-dark-v2.png"
-            width={36}
-            height={36}
-            alt=""
-            className="hidden h-9 w-9 dark:block"
+            className="h-9 w-9"
             aria-hidden="true"
             priority
           />
