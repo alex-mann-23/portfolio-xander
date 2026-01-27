@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { PageTransition } from "@/components/PageTransition";
 import { ProjectsGrid } from "@/components/ProjectsGrid";
+import { ScrollToFeaturedButton } from "@/components/ScrollToFeaturedButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -17,13 +17,11 @@ export default function HomePage() {
           Everything starts with an <span className="font-bold">idea</span>.
         </h1>
         <p className="max-w-2xl text-lg text-muted-foreground">
-          Hi! 👋🏼 I’m Alexander Mann, a Senior Product Designer with more than 15 years of
-          experience based in London 🇬🇧
+          Hi there! 👋🏼 I’m Alexander Mann — a Senior Product Designer from Argentina 🇦🇷
+          living in London 🇬🇧 with 15+ years shaping digital products and design solutions.
         </p>
         <div className="flex flex-wrap gap-3">
-          <Button className="border border-primary" asChild>
-            <a href={site.cta.href}>Get in touch!</a>
-          </Button>
+          <ScrollToFeaturedButton />
         </div>
       </section>
 
@@ -37,9 +35,6 @@ export default function HomePage() {
             </p>
             <h2 className="text-2xl font-semibold">{site.hero.heading}</h2>
           </div>
-          <Button variant="ghost" size="sm" asChild>
-            <Link href="/projects">View all</Link>
-          </Button>
         </div>
         <ProjectsGrid projects={featuredProjects} />
       </section>
