@@ -10,7 +10,7 @@ import { site } from "@/data/site";
 export default function HomePage() {
   const featuredProjects = projects.filter((project) => project.featured);
   const otherProjectButtonClass =
-    "rounded-[4px] text-sm underline underline-offset-4 decoration-foreground/60 hover:decoration-foreground";
+    "rounded-[4px] text-sm decoration-foreground/60 hover:decoration-foreground";
 
   return (
     <PageTransition>
@@ -88,7 +88,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
             <div className="space-y-2">
               <p className="text-base font-semibold">Website Redesign @ Unit4</p>
-              <p className="text-sm text-muted-foreground">DCX - 2024</p>
+              <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
             </div>
             <div className="sm:flex sm:items-center sm:justify-center">
               <Button
@@ -98,7 +98,7 @@ export default function HomePage() {
                 className={otherProjectButtonClass}
               >
                 <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
-                  <span>View Website</span>
+                  <span className="font-semibold">View Website</span>
                   <svg
                     viewBox="0 0 24 24"
                     className="h-4 w-4"
@@ -137,7 +137,7 @@ export default function HomePage() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span>View Website</span>
+                  <span className="font-semibold">View Website</span>
                   <svg
                     viewBox="0 0 24 24"
                     className="h-4 w-4"
