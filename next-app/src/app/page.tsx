@@ -74,17 +74,54 @@ export default function HomePage() {
       </section>
 
       <section id="cta" className="rounded-3xl border border-border/60 bg-card/60 p-8 shadow-sm">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="space-y-4">
+          <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
+            Other projects
+          </p>
+          <h2 className="text-2xl font-semibold">
+            Some products I've helped or worked with other designers I'm proud of
+          </h2>
+        </div>
+        <div className="mt-6 space-y-6">
           <div className="space-y-2">
-            <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-              Let's build
-            </p>
-            <h2 className="text-2xl font-semibold">{site.cta.heading}</h2>
-            <p className="text-muted-foreground">{site.cta.subheading}</p>
+            <p className="text-base font-semibold">Website Redesign @ Unit4</p>
+            <p className="text-sm text-muted-foreground">DCX - 2024</p>
+            <Button variant="outline" size="sm" asChild>
+              <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
+                View LIVE SITE
+              </a>
+            </Button>
           </div>
-          <Button size="lg" asChild>
-            <a href={site.cta.href}>{site.cta.actionLabel}</a>
-          </Button>
+          <div className="space-y-2">
+            <p className="text-base font-semibold">Intertal HR & Compensation Software @ WTW</p>
+            <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
+            <p className="text-sm text-muted-foreground">Case Study Available</p>
+          </div>
+          <div className="space-y-2">
+            <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
+            <p className="text-sm text-muted-foreground">DCX - 2022</p>
+            <Button variant="outline" size="sm" asChild>
+              <a
+                href="https://www.alwaleedculturalnetwork.org/en/homepage/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Website
+              </a>
+            </Button>
+          </div>
+          <div className="space-y-2">
+            <p className="text-base font-semibold">
+              Internal AI-forecast Planning Software @ Levi's
+            </p>
+            <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
+            <p className="text-sm text-muted-foreground">Case Study Available</p>
+          </div>
+          <div className="space-y-2">
+            <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
+            <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+            <p className="text-sm text-muted-foreground">Case Study Available</p>
+          </div>
         </div>
       </section>
     </PageTransition>
