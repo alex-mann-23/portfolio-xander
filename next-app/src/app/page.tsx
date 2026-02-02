@@ -89,7 +89,11 @@ export default function HomePage() {
               <p className="text-sm text-muted-foreground">DCX - 2024</p>
             </div>
             <div className="sm:text-right">
-              <Button variant="outline" size="sm" asChild>
+              <Button
+                size="sm"
+                asChild
+                className="rounded-[4px] bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
+              >
                 <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
                   View LIVE SITE
                 </a>
@@ -109,7 +113,11 @@ export default function HomePage() {
               <p className="text-sm text-muted-foreground">DCX - 2022</p>
             </div>
             <div className="sm:text-right">
-              <Button variant="outline" size="sm" asChild>
+              <Button
+                size="sm"
+                asChild
+                className="rounded-[4px] bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
+              >
                 <a
                   href="https://www.alwaleedculturalnetwork.org/en/homepage/"
                   target="_blank"
