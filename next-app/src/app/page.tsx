@@ -9,6 +9,8 @@ import { site } from "@/data/site";
 
 export default function HomePage() {
   const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjectButtonClass =
+    "rounded-[4px] text-sm underline underline-offset-4 decoration-foreground/60 hover:decoration-foreground";
 
   return (
     <PageTransition>
@@ -83,66 +85,90 @@ export default function HomePage() {
           </h2>
         </div>
         <div className="mt-6 divide-y divide-border/60">
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
             <div className="space-y-2">
               <p className="text-base font-semibold">Website Redesign @ Unit4</p>
               <p className="text-sm text-muted-foreground">DCX - 2024</p>
             </div>
-            <div className="sm:text-right">
+            <div className="sm:flex sm:items-center sm:justify-center">
               <Button
                 size="sm"
+                variant="ghost"
                 asChild
-                className="rounded-[4px] bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
+                className={otherProjectButtonClass}
               >
                 <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
-                  View LIVE SITE
+                  <span>View Website</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path d="M5 12h14M13 5l7 7-7 7" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
                 </a>
               </Button>
             </div>
           </div>
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex flex-col items-center gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="space-y-2">
               <p className="text-base font-semibold">Intertal HR & Compensation Software @ WTW</p>
               <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
             </div>
-            <p className="text-sm text-muted-foreground sm:text-right">Case Study Available</p>
+            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+              Case Study Available
+            </p>
           </div>
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="space-y-2">
               <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
               <p className="text-sm text-muted-foreground">DCX - 2022</p>
             </div>
-            <div className="sm:text-right">
+            <div className="flex justify-center sm:flex sm:items-center sm:justify-center">
               <Button
                 size="sm"
+                variant="ghost"
                 asChild
-                className="rounded-[4px] bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
+                className={otherProjectButtonClass}
               >
                 <a
                   href="https://www.alwaleedculturalnetwork.org/en/homepage/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Website
+                  <span>View Website</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path d="M5 12h14M13 5l7 7-7 7" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
                 </a>
               </Button>
             </div>
           </div>
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="space-y-2">
               <p className="text-base font-semibold">
                 Internal AI-forecast Planning Software @ Levi's
               </p>
               <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
             </div>
-            <p className="text-sm text-muted-foreground sm:text-right">Case Study Available</p>
+            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+              Case Study Available
+            </p>
           </div>
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="space-y-2">
               <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
               <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
             </div>
-            <p className="text-sm text-muted-foreground sm:text-right">Case Study Available</p>
+            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+              Case Study Available
+            </p>
           </div>
         </div>
       </section>
