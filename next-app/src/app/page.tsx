@@ -82,45 +82,59 @@ export default function HomePage() {
             Some products I've helped or worked with other designers I'm proud of
           </h2>
         </div>
-        <div className="mt-6 space-y-6">
-          <div className="space-y-2">
-            <p className="text-base font-semibold">Website Redesign @ Unit4</p>
-            <p className="text-sm text-muted-foreground">DCX - 2024</p>
-            <Button variant="outline" size="sm" asChild>
-              <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
-                View LIVE SITE
-              </a>
-            </Button>
+        <div className="mt-6 divide-y divide-border/60">
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Website Redesign @ Unit4</p>
+              <p className="text-sm text-muted-foreground">DCX - 2024</p>
+            </div>
+            <div className="sm:text-right">
+              <Button variant="outline" size="sm" asChild>
+                <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
+                  View LIVE SITE
+                </a>
+              </Button>
+            </div>
           </div>
-          <div className="space-y-2">
-            <p className="text-base font-semibold">Intertal HR & Compensation Software @ WTW</p>
-            <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
-            <p className="text-sm text-muted-foreground">Case Study Available</p>
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Intertal HR & Compensation Software @ WTW</p>
+              <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
+            </div>
+            <p className="text-sm text-muted-foreground sm:text-right">Case Study Available</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
-            <p className="text-sm text-muted-foreground">DCX - 2022</p>
-            <Button variant="outline" size="sm" asChild>
-              <a
-                href="https://www.alwaleedculturalnetwork.org/en/homepage/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Website
-              </a>
-            </Button>
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
+              <p className="text-sm text-muted-foreground">DCX - 2022</p>
+            </div>
+            <div className="sm:text-right">
+              <Button variant="outline" size="sm" asChild>
+                <a
+                  href="https://www.alwaleedculturalnetwork.org/en/homepage/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Website
+                </a>
+              </Button>
+            </div>
           </div>
-          <div className="space-y-2">
-            <p className="text-base font-semibold">
-              Internal AI-forecast Planning Software @ Levi's
-            </p>
-            <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
-            <p className="text-sm text-muted-foreground">Case Study Available</p>
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">
+                Internal AI-forecast Planning Software @ Levi's
+              </p>
+              <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
+            </div>
+            <p className="text-sm text-muted-foreground sm:text-right">Case Study Available</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
-            <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
-            <p className="text-sm text-muted-foreground">Case Study Available</p>
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
+              <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+            </div>
+            <p className="text-sm text-muted-foreground sm:text-right">Case Study Available</p>
           </div>
         </div>
       </section>
