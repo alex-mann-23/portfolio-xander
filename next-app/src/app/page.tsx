@@ -9,6 +9,8 @@ import { site } from "@/data/site";
 
 export default function HomePage() {
   const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjectButtonClass =
+    "rounded-[4px] text-sm decoration-foreground/60 hover:decoration-foreground";
 
   return (
     <PageTransition>
@@ -74,17 +76,100 @@ export default function HomePage() {
       </section>
 
       <section id="cta" className="rounded-3xl border border-border/60 bg-card/60 p-8 shadow-sm">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div className="space-y-2">
-            <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-              Let's build
-            </p>
-            <h2 className="text-2xl font-semibold">{site.cta.heading}</h2>
-            <p className="text-muted-foreground">{site.cta.subheading}</p>
+        <div className="space-y-4">
+          <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
+            Other projects
+          </p>
+          <h2 className="text-2xl font-semibold">
+            Some products I've helped or worked with other designers I'm proud of
+          </h2>
+        </div>
+        <div className="mt-6 divide-y divide-border/60">
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Website Redesign @ Unit4</p>
+              <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
+            </div>
+            <div className="sm:flex sm:items-center sm:justify-center">
+              <Button
+                size="sm"
+                variant="ghost"
+                asChild
+                className={otherProjectButtonClass}
+              >
+                <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
+                  <span className="font-semibold">View Website</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path d="M5 12h14M13 5l7 7-7 7" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </a>
+              </Button>
+            </div>
           </div>
-          <Button size="lg" asChild>
-            <a href={site.cta.href}>{site.cta.actionLabel}</a>
-          </Button>
+          <div className="flex flex-col items-center gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Intertal HR & Compensation Software @ WTW</p>
+              <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
+            </div>
+            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+              Case Study Available
+            </p>
+          </div>
+          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
+              <p className="text-sm text-muted-foreground">DCX - 2022</p>
+            </div>
+            <div className="flex justify-center sm:flex sm:items-center sm:justify-center">
+              <Button
+                size="sm"
+                variant="ghost"
+                asChild
+                className={otherProjectButtonClass}
+              >
+                <a
+                  href="https://www.alwaleedculturalnetwork.org/en/homepage/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="font-semibold">View Website</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path d="M5 12h14M13 5l7 7-7 7" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">
+                Internal AI-forecast Planning Software @ Levi's
+              </p>
+              <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
+            </div>
+            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+              Case Study Available
+            </p>
+          </div>
+          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
+              <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+            </div>
+            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+              Case Study Available
+            </p>
+          </div>
         </div>
       </section>
     </PageTransition>

@@ -22,6 +22,8 @@ export function Header() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  const isDark = mounted && resolvedTheme === "dark";
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -39,7 +41,15 @@ export function Header() {
         </Link>
 
         <nav className="flex items-center gap-6">
-          <Button variant="outline" size="sm" asChild>
+          <Button
+            size="sm"
+            asChild
+            className={
+              isDark
+                ? "rounded-[4px] bg-white text-black hover:bg-white/90"
+                : "rounded-[4px] bg-black text-white hover:bg-black/90"
+            }
+          >
             <a href={site.cta.href}>{site.cta.actionLabel}</a>
           </Button>
           <Button variant="ghost" size="sm" onClick={toggleTheme}>
