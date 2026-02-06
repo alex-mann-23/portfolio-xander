@@ -85,7 +85,7 @@ export default function HomePage() {
           </h2>
         </div>
         <div className="mt-6 divide-y divide-border/60">
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-center sm:gap-8">
+          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
             <div className="space-y-2">
               <p className="text-base font-semibold">Website Redesign @ Unit4</p>
               <p className="text-sm text-muted-foreground">DCX - 2024/25</p>

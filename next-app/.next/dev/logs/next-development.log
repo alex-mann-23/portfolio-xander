@@ -1,8 +1,4 @@
-[00:00:03.544] Server  LOG     ✓ Ready in 2.6s
-[00:00:08.074] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.675] Browser WARN    Image with src "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/601038b1c79e167af7d6bb4f_Preview-Unlock.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:03.083] Server  LOG     ✓ Ready in 2.7s
+[00:00:04.998] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.530] Browser WARN    Image with src "https://cdn.prod.website-files.com/5f85f6aeb7cf74ee1bc94975/601038b1c79e167af7d6bb4f_Preview-Unlock.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:24.914] Server  LOG     ✓ Compiled in 766ms
-[00:02:52.931] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:30.519] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:22:45.826] Server  LOG     ✓ Compiled in 86ms
