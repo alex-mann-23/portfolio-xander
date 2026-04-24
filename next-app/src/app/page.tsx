@@ -105,9 +105,9 @@ export default function HomePage() {
           <div className="mt-6 divide-y divide-border/60">
             <div className={ctaProjectRowClass}>
               <div className={ctaProjectTextClass}>
-                <p className="text-base font-semibold">Website Redesign @ Unit4</p>
-                <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
-              </div>
+                  <p className="text-base font-semibold">Website Redesign @ Unit4</p>
+                  <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
+                </div>
               <div className={ctaProjectActionClass}>
                 <Button
                   size="sm"
@@ -135,20 +135,20 @@ export default function HomePage() {
             </div>
             <div className={ctaProjectRowClass}>
               <div className={ctaProjectTextClass}>
-                <p className="text-base font-semibold">
-                  Intertal HR & Compensation Software @ WTW
-                </p>
-                <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
-              </div>
+                  <p className="text-base font-semibold">
+                    Intertal HR & Compensation Software @ WTW
+                  </p>
+                  <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
+                </div>
               <div className={ctaProjectActionClass}>
                 <p className="text-right text-sm text-muted-foreground">Case Study Available</p>
               </div>
             </div>
             <div className={ctaProjectRowClass}>
               <div className={ctaProjectTextClass}>
-                <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
-                <p className="text-sm text-muted-foreground">DCX - 2022</p>
-              </div>
+                  <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
+                  <p className="text-sm text-muted-foreground">DCX - 2022</p>
+                </div>
               <div className={ctaProjectActionClass}>
                 <Button
                   size="sm"
@@ -180,22 +180,124 @@ export default function HomePage() {
             </div>
             <div className={ctaProjectRowClass}>
               <div className={ctaProjectTextClass}>
-                <p className="text-base font-semibold">
-                  Internal AI-forecast Planning Software @ Levi's
-                </p>
-                <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
-              </div>
+                  <p className="text-base font-semibold">
+                    Internal AI-forecast Planning Software @ Levi's
+                  </p>
+                  <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
+                </div>
               <div className={ctaProjectActionClass}>
                 <p className="text-right text-sm text-muted-foreground">Case Study Available</p>
               </div>
             </div>
             <div className={ctaProjectRowClass}>
               <div className={ctaProjectTextClass}>
-                <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
-                <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+                  <p className="text-base font-semibold">New Feature Design @ Royal Mail App</p>
+                  <p className="text-sm text-muted-foreground">W12 - 2021</p>
+                </div>
+              <div className={ctaProjectActionClass}>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  asChild
+                  className={otherProjectButtonClass}
+                >
+                  <a
+                    href="https://www.royalmail.com/downloadapp"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="font-semibold">View App</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M5 12h14M13 5l7 7-7 7"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </a>
+                </Button>
               </div>
+            </div>
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
+                  <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
+                  <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+                </div>
               <div className={ctaProjectActionClass}>
                 <p className="text-right text-sm text-muted-foreground">Case Study Available</p>
+              </div>
+            </div>
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
+                  <p className="text-base font-semibold">Website Redesign @ Banco Santa Fe</p>
+                  <p className="text-sm text-muted-foreground">Aerolab - 2020/21</p>
+                </div>
+              <div className={ctaProjectActionClass}>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  asChild
+                  className={otherProjectButtonClass}
+                >
+                  <a
+                    href="https://www.bancosantafe.com.ar/personas"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="font-semibold">View Website</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M5 12h14M13 5l7 7-7 7"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </a>
+                </Button>
+              </div>
+            </div>
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
+                <p className="text-base font-semibold">Smart Helmet App Design @ Unit1</p>
+                <p className="text-sm text-muted-foreground">Aerolab - 2020</p>
+              </div>
+              <div className={ctaProjectActionClass}>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  asChild
+                  className={otherProjectButtonClass}
+                >
+                  <a
+                    href="https://www.unit1gear.com/pages/app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="font-semibold">View App</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M5 12h14M13 5l7 7-7 7"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
