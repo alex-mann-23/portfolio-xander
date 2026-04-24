@@ -8,6 +8,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function HomePage() {
   const otherProjectButtonClass =
     "rounded-[4px] text-sm decoration-foreground/60 hover:decoration-foreground";
+  const ctaProjectRowClass =
+    "flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-6";
+  const ctaProjectTextClass = "min-w-0 flex-1 space-y-2 text-left";
+  const ctaProjectActionClass = "flex w-full shrink-0 justify-end sm:w-auto";
   const [activeTab, setActiveTab] = useState<"projects" | "about">("projects");
 
   const tabButtonBase =
