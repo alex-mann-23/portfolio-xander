@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const { resolvedTheme, setTheme, theme } = useTheme();
@@ -44,11 +45,12 @@ export function Header() {
           <Button
             size="sm"
             asChild
-            className={
+            className={cn(
               isDark
                 ? "rounded-[4px] bg-white text-black hover:bg-white/90"
-                : "rounded-[4px] bg-black text-white hover:bg-black/90"
-            }
+                : "rounded-[4px] bg-black text-white hover:bg-black/90",
+              "hidden"
+            )}
           >
             <a href={site.cta.href}>{site.cta.actionLabel}</a>
           </Button>
