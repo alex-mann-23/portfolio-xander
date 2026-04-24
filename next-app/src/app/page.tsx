@@ -1,16 +1,21 @@
+ "use client";
+
+import { useState } from "react";
 import { PageTransition } from "@/components/PageTransition";
-import { ProjectsGrid } from "@/components/ProjectsGrid";
-import { ScrollToFeaturedButton } from "@/components/ScrollToFeaturedButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { projects } from "@/data/projects";
-import { site } from "@/data/site";
 
 export default function HomePage() {
-  const featuredProjects = projects.filter((project) => project.featured);
   const otherProjectButtonClass =
     "rounded-[4px] text-sm decoration-foreground/60 hover:decoration-foreground";
+  const [activeTab, setActiveTab] = useState<"projects" | "about">("projects");
+
+  const tabButtonBase =
+    "rounded-lg border-0 px-4 py-2 text-xs uppercase tracking-[0.3em] transition-[color,background-color] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+  const tabButtonInactive =
+    "font-semibold bg-transparent text-muted-foreground hover:text-foreground/80 dark:text-zinc-500 dark:hover:text-zinc-400";
+  const tabButtonActive =
+    "font-bold bg-zinc-200 text-zinc-900 dark:bg-zinc-100 dark:text-[hsl(222,47%,6%)]";
 
   return (
     <PageTransition>
@@ -19,159 +24,180 @@ export default function HomePage() {
           Everything starts with an <span className="font-bold">idea</span>.
         </h1>
         <p className="max-w-2xl text-lg text-muted-foreground">
-          Hi there! 👋🏼 I’m Alexander Mann — a Senior Product Designer from Argentina 🇦🇷
+          Hi there! 👋🏼 I’m Alex M — a Senior Product Designer from Argentina 🇦🇷
           living in London 🇬🇧 with 15+ years shaping digital products and design solutions.
         </p>
-        <div className="flex flex-wrap gap-3">
-          <ScrollToFeaturedButton />
-        </div>
       </section>
 
-      <Separator />
+      <div className="flex flex-wrap gap-2">
+        <button
+          type="button"
+          onClick={() => setActiveTab("projects")}
+          className={`${tabButtonBase} ${
+            activeTab === "projects" ? tabButtonActive : tabButtonInactive
+          }`}
+        >
+          Latest
+        </button>
+        <button
+          type="button"
+          onClick={() => setActiveTab("about")}
+          className={`${tabButtonBase} ${
+            activeTab === "about" ? tabButtonActive : tabButtonInactive
+          }`}
+        >
+          About
+        </button>
+      </div>
 
-      <section id="featured" className="space-y-6">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-              Featured
-            </p>
-            <h2 className="text-2xl font-semibold">{site.hero.heading}</h2>
-          </div>
-        </div>
-        <ProjectsGrid projects={featuredProjects} />
-      </section>
-
-      <section id="about" className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-4">
-          <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            About
-          </p>
-          <h2 className="text-2xl font-semibold">A short story behind my work</h2>
-          <div className="space-y-3 text-muted-foreground">
-            <p>
-              I am a product designer who enjoys what design has to bring to the world. I
-              simply love making useful things that also look great 🔥
-            </p>
-            <p>
-              By the age of 12, I learnt basic HTML at school. This was the first time that I
-              could be in control of the design of something, and I immediately loved it! 🫶🏻
-            </p>
-            <p>
-              A new hobby was born: every day after school, I went back home and started a new
-              web on whatever subject I had in mind. Opening a bloc of notes and starting to
-              code was an adventure for me. 🤓
-            </p>
-            <p>
-              Years later, I realised I enjoyed designing more than coding, and the rest is
-              history 😉
-            </p>
-            <p>
-              Now, after years of having worked in different industries as a designer
-              (marketing, branding, digital advertising, UX/UI, product), I'm closing the
-              circle, diving back into code and using Cursor to build the website you are
-              looking at right now 😊
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="cta" className="rounded-3xl border border-border/60 bg-card/60 p-8 shadow-sm">
-        <div className="space-y-4">
-          <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-            Other projects
-          </p>
-          <h2 className="text-2xl font-semibold">
-            Some products I've helped or worked with other designers I'm proud of
-          </h2>
-        </div>
-        <div className="mt-6 divide-y divide-border/60">
-          <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
-            <div className="space-y-2">
-              <p className="text-base font-semibold">Website Redesign @ Unit4</p>
-              <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
-            </div>
-            <div className="sm:flex sm:items-center sm:justify-center">
-              <Button
-                size="sm"
-                variant="ghost"
-                asChild
-                className={otherProjectButtonClass}
-              >
-                <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
-                  <span className="font-semibold">View Website</span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <path d="M5 12h14M13 5l7 7-7 7" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                </a>
-              </Button>
-            </div>
-          </div>
-          <div className="flex flex-col items-center gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
-            <div className="space-y-2">
-              <p className="text-base font-semibold">Intertal HR & Compensation Software @ WTW</p>
-              <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
-            </div>
-            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
-              Case Study Available
-            </p>
-          </div>
-          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
-            <div className="space-y-2">
-              <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
-              <p className="text-sm text-muted-foreground">DCX - 2022</p>
-            </div>
-            <div className="flex justify-center sm:flex sm:items-center sm:justify-center">
-              <Button
-                size="sm"
-                variant="ghost"
-                asChild
-                className={otherProjectButtonClass}
-              >
-                <a
-                  href="https://www.alwaleedculturalnetwork.org/en/homepage/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="font-semibold">View Website</span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <path d="M5 12h14M13 5l7 7-7 7" strokeWidth="1.5" strokeLinecap="round" />
-                  </svg>
-                </a>
-              </Button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
-            <div className="space-y-2">
-              <p className="text-base font-semibold">
-                Internal AI-forecast Planning Software @ Levi's
+      {activeTab === "about" ? (
+        <section
+          id="about"
+          className="rounded-3xl border border-border/60 bg-card/60 p-8 shadow-sm"
+        >
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold">A short story behind my work</h2>
+            <div className="space-y-3 text-muted-foreground">
+              <p>
+                I’m a product designer who genuinely loves what design can bring into the
+                world — useful things that also look great 🔥
               </p>
-              <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
+              <p>
+                It all started when I was 12, learning basic HTML at school. For the first
+                time, I could actually control how something looked and worked — and I was
+                instantly hooked 🫶🏻
+              </p>
+              <p>
+                That quickly turned into a daily habit. I’d get home, open Notepad, and build
+                random little websites about whatever I was into at the time. It felt like a
+                tiny adventure every day 🤓
+              </p>
+              <p>
+                Over time, I realised I was more drawn to designing than coding… and
+                naturally leaned into it 😉
+              </p>
+              <p>
+                Since then, I’ve worked across different areas — marketing, branding, digital,
+                UX / UI, product — picking up a bit of everything along the way.
+              </p>
+              <p>
+                Now I feel like I’ve come full circle, getting back into code and using tools
+                like Cursor to build things again — including this very site 😊
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
-              Case Study Available
-            </p>
           </div>
-          <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
-            <div className="space-y-2">
-              <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
-              <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+        </section>
+      ) : (
+        <section
+          id="cta"
+          className="rounded-3xl border border-border/60 bg-card/60 p-8 shadow-sm"
+        >
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold">
+              A mix of projects I've led and teamed up on — bringing ideas to life,
+              solving problems, and making things look and feel great along the way
+            </h2>
+          </div>
+          <div className="mt-6 divide-y divide-border/60">
+            <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
+              <div className="space-y-2">
+                <p className="text-base font-semibold">Website Redesign @ Unit4</p>
+                <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
+              </div>
+              <div className="sm:flex sm:items-center sm:justify-center">
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  asChild
+                  className={otherProjectButtonClass}
+                >
+                  <a href="https://www.unit4.com/" target="_blank" rel="noreferrer">
+                    <span className="font-semibold">View Website</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M5 12h14M13 5l7 7-7 7"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </a>
+                </Button>
+              </div>
             </div>
-            <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
-              Case Study Available
-            </p>
+            <div className="flex flex-col items-center gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="space-y-2">
+                <p className="text-base font-semibold">
+                  Intertal HR & Compensation Software @ WTW
+                </p>
+                <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
+              </div>
+              <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+                Case Study Available
+              </p>
+            </div>
+            <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="space-y-2">
+                <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
+                <p className="text-sm text-muted-foreground">DCX - 2022</p>
+              </div>
+              <div className="flex justify-center sm:flex sm:items-center sm:justify-center">
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  asChild
+                  className={otherProjectButtonClass}
+                >
+                  <a
+                    href="https://www.alwaleedculturalnetwork.org/en/homepage/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="font-semibold">View Website</span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-4 w-4"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M5 12h14M13 5l7 7-7 7"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </a>
+                </Button>
+              </div>
+            </div>
+            <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
+              <div className="space-y-2">
+                <p className="text-base font-semibold">
+                  Internal AI-forecast Planning Software @ Levi's
+                </p>
+                <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
+              </div>
+              <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+                Case Study Available
+              </p>
+            </div>
+            <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
+              <div className="space-y-2">
+                <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
+                <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
+              </div>
+              <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
+                Case Study Available
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
     </PageTransition>
   );
 }
