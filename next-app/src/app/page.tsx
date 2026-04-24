@@ -103,12 +103,12 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="mt-6 divide-y divide-border/60">
-            <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
-              <div className="space-y-2">
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
                 <p className="text-base font-semibold">Website Redesign @ Unit4</p>
                 <p className="text-sm text-muted-foreground">DCX - 2024/25</p>
               </div>
-              <div className="sm:flex sm:items-center sm:justify-center">
+              <div className={ctaProjectActionClass}>
                 <Button
                   size="sm"
                   variant="ghost"
@@ -133,23 +133,23 @@ export default function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="space-y-2">
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
                 <p className="text-base font-semibold">
                   Intertal HR & Compensation Software @ WTW
                 </p>
                 <p className="text-sm text-muted-foreground">DCX - 2023/24</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
-                Case Study Available
-              </p>
+              <div className={ctaProjectActionClass}>
+                <p className="text-right text-sm text-muted-foreground">Case Study Available</p>
+              </div>
             </div>
-            <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="space-y-2">
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
                 <p className="text-base font-semibold">Homepage Redesign @ ACN</p>
                 <p className="text-sm text-muted-foreground">DCX - 2022</p>
               </div>
-              <div className="flex justify-center sm:flex sm:items-center sm:justify-center">
+              <div className={ctaProjectActionClass}>
                 <Button
                   size="sm"
                   variant="ghost"
@@ -178,25 +178,25 @@ export default function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
-              <div className="space-y-2">
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
                 <p className="text-base font-semibold">
                   Internal AI-forecast Planning Software @ Levi's
                 </p>
                 <p className="text-sm text-muted-foreground">Reason - 2021/22</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
-                Case Study Available
-              </p>
+              <div className={ctaProjectActionClass}>
+                <p className="text-right text-sm text-muted-foreground">Case Study Available</p>
+              </div>
             </div>
-            <div className="flex flex-col gap-0 py-6 sm:flex-row sm:items-start sm:justify-between">
-              <div className="space-y-2">
+            <div className={ctaProjectRowClass}>
+              <div className={ctaProjectTextClass}>
                 <p className="text-base font-semibold">Website Redesign @ Auth0 (Okta)</p>
                 <p className="text-sm text-muted-foreground">Aerolab - 2021</p>
               </div>
-              <p className="text-sm text-muted-foreground sm:self-center sm:text-center">
-                Case Study Available
-              </p>
+              <div className={ctaProjectActionClass}>
+                <p className="text-right text-sm text-muted-foreground">Case Study Available</p>
+              </div>
             </div>
           </div>
         </section>
