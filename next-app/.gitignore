@@ -4,3 +4,6 @@
 next-development.log
 .next
 .next/**
+*.sst
+*.meta
+.sst/
